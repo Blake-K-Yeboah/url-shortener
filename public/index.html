@@ -15,15 +15,31 @@
         body {
             height: 100vh;
             width:100vw;
-            background-color: #d8e7ee
+            background: rgb(222,97,143);
+            background: linear-gradient(90deg, rgba(222,97,143,1) 0%, rgba(88,161,255,1) 100%);
         }
+
+        .card {
+            background-color: rgba(255,255,255,0.25);
+        }
+
+        input.form-control {
+            background: rgba(255,255,255,0.25);
+        }
+        
+        .form-control:focus {
+            background: rgba(255,255,255,0.25);
+            box-shadow: 0px 0px 20px #de618f;
+            outline: none;
+        }
+
     </style>
 
 </head>
 <body>
     <div class="d-flex justify-content-center align-items-center h-100">
         
-        <div class="card w-50 h-50 rounded-3">
+        <div class="card w-50 h-50 rounded-3 text-light">
             <div class="card-body">
                 <h1 class="display-5 card-title text-center pt-4">URL Shortener</h1>
 
@@ -31,17 +47,17 @@
                     <div class="mb-3">
                         <label for="url" class="form-label">URL:</label>
                         <input type="text" class="form-control" id="url">
-                        <small class="text-muted">Your URL will be shortened once you click the button below</small>
+                        <small>Your URL will be shortened once you click the button below</small>
                     </div>
-                    <button type="submit" class="btn btn-dark">Shorten URL</button>
+                    <button type="submit" class="btn btn-outline-primary">Shorten URL</button>
                 </form>
                 
                 <div class="w-75 mx-auto">
                     <h4 class="display-6">Shortened URL</h4>
                     <div class="d-flex flex-row align-items-center">
                         <!-- <a href="#" id="new-url" style="margin-right:30px">https://localhost:5000</a> -->
-                        <span class="text-muted" style="margin-right: 30px">Shortened URL Goes Here</span>
-                        <button type="button" class="btn btn-primary ml-5">
+                        <span style="margin-right: 30px">Shortened URL Will Appear Here</span>
+                        <button type="button" class="btn btn-outline-primary ml-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
                                 <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"></path>
                             </svg>
@@ -50,8 +66,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card-footer p-3 text-center text-muted">
-                Project built by <a href="https://www.blakeyeboah.com/" target="_blank" class="text-info">Blake Yeboah</a>
+            <div class="card-footer p-3 text-center">
+                Project built by <a href="https://www.blakeyeboah.com/" target="_blank" class="text-primary">Blake Yeboah</a>
             </div>
         </div>
 

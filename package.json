@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.13"
+    "mongoose": "^6.0.13",
+    "nanoid": "^3.1.30"
   },
   "scripts": {
     "start": "node server.js",
